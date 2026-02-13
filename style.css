@@ -12,6 +12,45 @@
   transition: background 2s ease; /* For the smooth color change */
 }
 
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  #wrapper {
+    width: 90%; /* Card takes up most of the screen width */
+    height: auto; /* Let it grow vertically if needed */
+    padding: 15px;
+  }
+
+  #question {
+    font-size: 1.8em; /* Slightly smaller text for mobile */
+  }
+
+  #gif {
+    width: 200px; /* Smaller GIF for small screens */
+  }
+
+  .envelope {
+    width: 260px; /* Smaller envelope so it doesn't hit the edges */
+    height: 170px;
+  }
+
+  .flap, .front {
+    border-left-width: 130px;
+    border-right-width: 130px;
+  }
+
+  .letter {
+    width: 240px;
+    height: 150px;
+    font-size: 14px;
+  }
+  
+  #envelope-wrapper.open .letter {
+    transform: translateY(-100px); /* Adjust slide height for mobile */
+    height: 240px;
+  }
+}
+
+
 /* This is the play area for the buttons */
 #btn-group {
   position: relative;
